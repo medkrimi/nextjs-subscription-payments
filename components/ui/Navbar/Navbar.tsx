@@ -20,16 +20,16 @@ const Navbar = () => {
         <div className="flex justify-between align-center flex-row py-4 md:py-6 relative">
           <div className="flex flex-1 items-center">
             <Link href="/">
-              <a className={s.logo} aria-label="Logo">
+              <span className={s.logo} aria-label="Logo">
                 <Logo />
-              </a>
+              </span>
             </Link>
             <nav className="space-x-2 ml-6 hidden lg:block">
               <Link href="/">
-                <a className={s.link}>Pricing</a>
+                <span className={s.link}>Pricing</span>
               </Link>
               <Link href="/account">
-                <a className={s.link}>Account</a>
+                <span className={s.link}>Account</span>
               </Link>
             </nav>
           </div>
@@ -47,7 +47,7 @@ const Navbar = () => {
               </span>
             ) : (
               <Link href="/signin">
-                <a className={s.link}>Sign in</a>
+                <span className={s.link}>Sign in</span>
               </Link>
             )}
           </div>
